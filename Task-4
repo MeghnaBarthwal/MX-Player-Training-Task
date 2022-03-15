@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+><html>
+    <body>
+        <script>
+            for(var i=5;i>1;i--){
+                for(var j=1;j<=i;j++){
+                    document.write('*');
+                }
+                document.write('<br />');
+            }
+            for(var a=1;a<=5;a++){
+                for(var b=1;b<=a;b++){
+                    document.write('*');
+                }
+                document.write('<br />');            }
+        </script>
+    </body>
+</html>
