@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+><html>
+    <body>
+        <script>
+           var a=[];
+           var index;
+           var flag=0;
+           function fun(a,index){
+               for(var i=0;i< a.length;i++){
+                   if(a[i]==index){
+                    flag=index;
+                   }
+               }
+               if(flag!=0){
+               document.writeln(a.slice(0,flag)+ ',' +a.slice(flag+1,a.length));
+               }
+               else{
+                   document.writeln("index not matched");
+                 }
+           }
+           fun([1,2,3,4,5,6,7,8], 3);
+        </script>
+    </body>
+</html>
