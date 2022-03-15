@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+><html>
+    <body>
+        <script>
+            function bankingApp(){
+                this.amount=1000;
+                this.openAccount = function(){
+                    if(amount=0){
+                        document.writeln('Please open the account');
+                    }
+                    else{
+                        document.writeln('Account already exits');
+                    }
+                    document.writeln('<br />');
+                }
+                this.withdraw= function(){
+                    this.wAmount=100;
+                    if(this.amount>=this.wAmount){
+                        this.amount=this.amount-this.wAmount;
+                        document.writeln("Amount is withdrawn, Available balance" + this.amount);    
+                    }
+                    else{
+                        document.writeln(" Amount not sufficient");
+                    }
+                    document.writeln('<br />');
+                }
+                this.deposit=function(){
+                    this.dAmount=100;
+                    document.writeln('Amount is deposited, Main Balance' + (this.amount+this.dAmount));
+                    document.writeln('<br />');
+                }
+            }
+            var obj = new bankingApp();
+            obj.openAccount();
+            obj.withdraw();
+            obj.deposit();
+
+        </script>
+    </body>
+</html>
