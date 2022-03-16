@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <div style="text-align: center"> 
+        <title> Banking Page </title>
+        <h1> Bank Dashboard </h1>
+        <h3> Enter the Amount </h3>
+        </div>
+        <style>
+            body{
+                background-image: url("photo.webp");
+                background-attachment: fixed;
+                background-size: cover;
+            }    
+        </style>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        
+        <script> 
+        
+          function avalidate(){
+            var amount = document.getElementById("amount").value;
+              if(amount==0){
+                  alert(" Amount cannot be zero");
+              } else if(amount == ' '){
+                  alert(" Amount cannot be empty");
+              } else if(amount < 5000){
+                  alert(" Amount cannot be less than 5000 ");
+              }
+              else{
+                  alert(" Account Opened ");
+                  alert(amount);
+              }
+              }
+
+        function wValidate(){
+            var balance=5000;
+              let withdrawAmount = document.getElementById("withdrawAmount").value;
+                  if(withdrawAmount<= balance){
+                  //var remainingBalance = amount-withdrawAmount;
+                  alert(" Amount withdrawn successfully ");
+              }else {
+                  alert(" Amount insufficient !!!! "); 
+              }
+        }
+
+
+        function dValidate(){
+              let depositeAmount = document.getElementById("depositeAmount").value;
+              if(depositeAmount == 0){
+                  alert(" Zero amount cannot be taken");
+                  //alert(amount);
+              } else{
+                  alert(" Added to Balance ");
+              }
+            } 
+
+            function myFunction() {
+           // document.getElementById("borderDiv").style.border = "thin dotted red";
+}
+         </script>
+    </head>
+    <body>
+        <div style="text-align:center"> 
+
+            <p> <input type="number" id="amount" placeholder="Enter the amount" /> </p>
+            <p> <button onclick="avalidate()"> Submit </button></p>
+            <p> <input type="number" id="withdrawAmount" placeholder="Enter the withdraw amount" /> </p>
+            <p> <button onclick="wValidate() "> Submit </button></p>
+            <p> <input type="number" id="depositeAmount" placeholder="Enter the Deposite amount" /> </p>
+            <p> <button onclick=" dValidate() "> Submit </button></p>
+        </div>
+        
+    </body>
+</html>
