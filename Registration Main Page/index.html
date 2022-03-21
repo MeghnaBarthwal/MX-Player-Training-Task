@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visitor's Register</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+
+    <div class="form-element">
+      <form class="input-form">
+        <div class="field">
+          <label>UserName:</label>
+          <input type="text" id="name" required />
+        </div>
+
+        <div class="field">
+          <label>Password:</label>
+          <input type="password" id="pass" required />
+        </div>
+
+        <div class="field">
+          <label>Email:</label>
+          <input type="email" id="email" required />
+        </div>
+
+        <div class="field">
+          <label>City:</label>
+          <input type="text" id="city" required />
+        </div>
+
+        <div class="field">
+          <label>Pincode:</label>
+          <input type="number" id="pincode" required />
+        </div>
+
+        <div class="field">
+          <label>Phone Number:</label>
+          <input type="number" id="phone" required />
+        </div>
+
+        <div class="field">
+          <form>
+            <label>Gender</label><br />
+            <input type="radio" id="gender" value=" Female" required />
+            <label for="gender"> Female </label>
+            <input type="radio" id="gender" value=" Male" required />
+            <label for="gender"> Male </label>
+          </form>
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </div>
+
+    <!-- <div class="output">
+      <ol class="visitor-entries"></ol>
+    </div> -->
+
+    <script src="registration.js"></script>
+  </body>
+</html>
