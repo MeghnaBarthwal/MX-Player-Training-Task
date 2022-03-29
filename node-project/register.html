@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title> Home page </title>
+        <!-- <link rel="stylesheet" href="style.css"/> -->
+        <style>
+            head{
+    color: blueviolet;
+}
+input[type = text], [type = number] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input [type = submit]{
+    background-color: gray;
+    border: black;
+    padding: 20px 50px;
+}
+h1{
+    color: brown;
+    
+}
+.myDiv{
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 1px 1px 1px 1px ;
+    width: 100%;
+    clear: both;
+    text-align: center;
+    left: 10%;
+    right: 10%;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="myDiv" style="align-items: center; border: 1px; background-color: aliceblue;">
+
+        <h1 class="head"> Registration Page </h1>
+        <form action="show_user"  method="post" >
+            <p> <input type="text" name="username" placeholder="Username"/></p>
+            <p> <input type="text" name="password" placeholder="Password"/></p>
+            <p> <input type="text" name="city" placeholder="City"/></p>
+            <p> <input type="number" name="pincode" placeholder="Pincode"/></p>
+            <p> <input type="number" name="phone" placeholder="Phone Number"/></p>
+            <p> <input type="submit" value="Submit" name="submit" /> </p>
+        </form>
+        <label> Upload Photo </label>
+        <form action="upload" method="post" enctype="multipart/form-data">
+            <p> <input type="file" name="doc"/> </p>
+            <p> <input type="submit" value="Upload" name="upload" /></p>
+
+        </form>
+    </div>
+    </body>
+</html>
