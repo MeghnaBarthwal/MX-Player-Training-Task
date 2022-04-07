@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text=" FOOD "
+        android:id="@+id/food"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        />
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/burger"
+        android:layout_below="@+id/food"
+        android:id="@+id/burger"
+        >
+    </ImageView>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/burger"
+        android:text="Burger"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:id="@+id/burgerText"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/pizza"
+        android:layout_toRightOf="@+id/burger"
+        android:layout_below="@+id/food"
+        android:id="@+id/pizza"
+        />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/pizza"
+        android:text="Pizza"
+        android:textSize="30dp"
+        android:layout_toRightOf="@+id/burgerText"
+        android:gravity="center"
+        android:id="@+id/pizzaText"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/french"
+        android:layout_below="@+id/burgerText"
+        android:id="@+id/french"
+        />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/french"
+        android:text="French Fries"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/frenchText"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/momos"
+        android:layout_below="@+id/pizzaText"
+        android:id="@+id/momos"
+        android:layout_toRightOf="@+id/french"
+        />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/momos"
+        android:layout_toRightOf="@+id/frenchText"
+        android:text="Momos"
+        android:textSize="30dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frenchText"
+        android:textSize="35dp"
+        android:text="Choose Food"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
