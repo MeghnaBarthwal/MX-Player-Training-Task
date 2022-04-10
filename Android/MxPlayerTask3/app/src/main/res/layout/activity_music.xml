@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".music">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Music"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/teal_200"
+        android:layout_marginTop="20dp"
+        android:id="@+id/music"
+        android:layout_height="wrap_content"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_below="@+id/music"
+        android:id="@+id/musiccard1"
+        android:layout_height="wrap_content"
+>
+        <TextView
+            android:layout_width="150dp"
+            android:text="Mario Song"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_height="150dp"/>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/mario2"
+            android:layout_height="150dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/music"
+        android:layout_toRightOf="@+id/musiccard1"
+        android:text="Play/Stop" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_below="@+id/musiccard1"
+        android:id="@+id/musiccard2"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="150dp"
+            android:text="Inspiring Song"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_height="150dp"/>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/music2image"
+            android:layout_height="150dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_toRightOf="@+id/musiccard2"
+        android:layout_below="@+id/musiccard1"
+        android:id="@+id/button2"
+        android:text="Play/Stop"
+        android:layout_height="70dp"/>
+
+</RelativeLayout>

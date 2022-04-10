@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="MX Player "
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#2D45CC"
+        android:id="@+id/mxplayer"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/mxplayer"
+        android:text="AboutUs"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:id="@+id/about"
+        android:textColorLink="@color/teal_700"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/mxplayer"
+        android:layout_toRightOf="@+id/about"
+        android:text="Music"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/music"
+        android:textColorLink="@color/teal_700"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/mxplayer"
+        android:layout_toRightOf="@+id/music"
+        android:text="Gallery"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:textColorLink="@color/teal_700"
+        android:id="@+id/gallery"
+        android:layout_height="wrap_content"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/gallery"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/mx"
+        android:layout_height="300dp"/>
+
+
+
+</RelativeLayout>

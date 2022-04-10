@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gallery">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/gallery"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/teal_200"
+        android:layout_marginTop="20dp"
+        android:id="@+id/gallery"
+        android:layout_height="wrap_content"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/gallery"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:id="@+id/gallerycard1"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/song1"
+            android:id="@+id/image1"
+            android:layout_height="150dp"/>
+        <TextView
+            android:layout_width="150dp"
+            android:text="Phir Kabhi"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:id="@+id/gallerycard2"
+        android:layout_toRightOf="@+id/gallerycard1"
+        android:layout_below="@+id/gallery"
+        android:layout_marginLeft="20dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/song2"
+            android:id="@+id/image2"
+            android:layout_height="150dp"/>
+        <TextView
+            android:layout_width="170dp"
+            android:text="Raatan Lambiyan"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/gallerycard1"
+        android:layout_marginLeft="20dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:id="@+id/gallerycard3"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/song3"
+            android:id="@+id/image3"
+            android:layout_height="150dp"/>
+        <TextView
+            android:layout_width="170dp"
+            android:text="Intentions"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/gallerycard2"
+        android:layout_toRightOf="@+id/gallerycard3"
+        android:layout_marginLeft="20dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/song4"
+            android:id="@+id/image4"
+            android:layout_height="150dp"/>
+        <TextView
+            android:layout_width="170dp"
+            android:text="Chaand Baaliyaa"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
