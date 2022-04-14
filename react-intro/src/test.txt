@@ -1,0 +1,34 @@
+let name = "Meghna Barthwal";
+  let a= 10;
+  let b= 20;
+
+  var nums = [2,5,8,10];
+  const Fname = "Meghna"
+
+  var students = [
+    { name: "Meghna", course: "PHP", fee: 20000},
+    { name: "Aman", course: "React", fee: 22000},
+    { name: "Vinit", course: "Node", fee: 19000},
+    { name: "Kamal", course: "PHP", fee: 26000},
+    { name: "Raman", course: "Angular", fee: 180000},
+  ]
+  return (
+    <div className="App">
+      <h1> React App</h1>
+      <p> React js is view library </p>
+      <h2> My name is {name} </h2>
+      <h3> Sum of {a} + {b} is {a+b} </h3>
+      <ul>
+        {
+         nums.filter( num =>num >5).map((num) =>{
+            return <li> {num} </li>
+          })
+        }
+      </ul>
+      <h4> Student Details 
+        <table>
+          <thead><th> Name</th> <th> Course</th> <th> Fee</th></thead>
+
+        </table>
+      </h4>
+    </div>
