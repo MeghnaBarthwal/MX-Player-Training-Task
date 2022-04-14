@@ -1,0 +1,2 @@
+export const CREATE_PRODUCT = "CREATE_PRODUCT";
+export const READ_PRODUCT = "READ_PRODUCT";
