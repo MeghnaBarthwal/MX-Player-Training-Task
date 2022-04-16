@@ -1,0 +1,12 @@
+extension String {
+    func capitalize() -> String {
+        let array = self.split(separator: " ").map{String($0)}
+        var last = [String]()
+        for element in array {
+            last.append(String(element.uppercased().first ?? " ") + element.suffix(element.count-1))
+        }
+        return last.joined(separator: " ")
+    }
+}
+var name  = "meghna barthwal"
+print(name.capitalize())
